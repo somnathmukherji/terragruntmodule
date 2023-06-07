@@ -11,7 +11,7 @@ resource "aws_instance" "NAT_INSTANCE" {
   source_dest_check = false
   tags = {
               
-              "Name" : "TERRAGRUNT1"
+              "Name" : "NAT_INSTANCE"
                            
 			  }
 }
