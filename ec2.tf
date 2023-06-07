@@ -1,5 +1,5 @@
-resource "aws_instance" "TERRAGRUNT1" {
-  ami = "${data.aws_ami.TERRAGRUNT1.id}"
+resource "aws_instance" "NAT_INSTANCE" {
+  ami = "${data.aws_ami.NAT_INSTANCE.id}"
   instance_type = "${var.instance_type}"
   subnet_id = "{module.vpc.aws_subnet.public_subnet_1.id}"
   vpc_security_group_ids = [module.ec2.aws_security_group.nat_sg.id]
