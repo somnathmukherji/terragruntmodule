@@ -1,4 +1,4 @@
-data "aws_ami" "TERRAGRUNT1" {
+data "aws_ami" "NAT_INSTANCE" {
   most_recent = true
   owners = ["137112412989"]
   filter {
