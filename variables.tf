@@ -12,12 +12,6 @@ variable "instance_type" {
   default     = null
 }
 
-variable "instance_state" {
-  description = "EC2 instance State"
-  type = string
-  default     = null
-}
-
 # AWS EC2 Instance Key Pair
 variable "instance_keypair" {
   description = "AWS EC2 Key Pair that need to be associated with EC2 Instance"
@@ -89,10 +83,12 @@ variable "iam_role_tags" {
 variable "instance_state" {
   description = "AWS EC2 Instance instance_state"
   type = string
+  default     = null
  }
 
 # AWS EC2 Host Name
 variable "host_name" {
   description = "AWS EC2 Host Name"
   type = string
+  default     = null
  }
