@@ -9,14 +9,14 @@
 variable "instance_type" {
   description = "EC2 instance type"
   type = string
-  #default     = "t2.micro"
+  default     = null
 }
 
 # AWS EC2 Instance Key Pair
 variable "instance_keypair" {
   description = "AWS EC2 Key Pair that need to be associated with EC2 Instance"
   type = string
-  #default = "prodkey"
+  default = null
 }
 
 variable "ami" {
@@ -40,13 +40,13 @@ variable "availability_zone" {
 variable "key_name" {
   description = "Key name of the Key Pair to use for the instance; which can be managed using the `aws_key_pair` resource"
   type        = string
-  #default     = "prodkey"
+  default     = null
 }
 
 variable "subnet_id" {
   description = "The VPC Subnet ID to launch in"
   type        = string
- # default     = null
+ default     = null
 }
 
 variable "volume_tags" {
@@ -64,7 +64,7 @@ variable "enable_volume_tags" {
 variable "vpc_security_group_ids" {
   description = "A list of security group IDs to associate with"
   type        = list(string)
-  #default     = null
+  default     = null
 }
 
 variable "iam_role_policies" {
