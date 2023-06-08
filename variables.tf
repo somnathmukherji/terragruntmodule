@@ -84,11 +84,6 @@ variable "instance_state" {
   description = "AWS EC2 Instance instance_state"
   type = string
  }
-# AWS EC2 Instance Subnet Id
-variable "subnet_id" {
-  description = "AWS EC2 Instance Subnet Id"
-  type = string
- }
 
 # AWS EC2 Host Name
 variable "host_name" {
