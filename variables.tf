@@ -12,6 +12,12 @@ variable "instance_type" {
   default     = null
 }
 
+variable "instance_state" {
+  description = "EC2 instance State"
+  type = string
+  default     = null
+}
+
 # AWS EC2 Instance Key Pair
 variable "instance_keypair" {
   description = "AWS EC2 Key Pair that need to be associated with EC2 Instance"
@@ -22,7 +28,7 @@ variable "instance_keypair" {
 variable "ami" {
   description = "ID of AMI to use for the instance"
   type        = string
-  #default     = null
+  default     = null
 }
 
 variable "associate_public_ip_address" {
