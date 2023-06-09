@@ -7,49 +7,18 @@ resource "aws_instance" "NAT_INSTANCE" {
    # volume_type = "standard"
     #volume_size = 8
   #}
-  root_volumes = [
-    {
-      encrypted   = false
-      type        = "standard"
-      size        = 8
-      delete_term = true
-      throughput  = 128
-    }
-  ]
-  ebs_volumes = [
-    {
-      encrypted   = false
-      type        = "gp2"
-      size        = 8
-      device_name = "sdf"
-      delete_term = true
-      throughput  = 128
-    },
-    {
-      encrypted   = true
-      type        = "gp3"
-      size        = 6
-      device_name = "xvdc"
-      delete_term = true
-      throughput  = 128
-    },
-    {
-      encrypted   = true
-      type        = "gp3"
-      size        = 3
-      device_name = "xvdf"
-      delete_term = true
-      throughput  = 125
-    },
-    {
-      encrypted   = true
-      type        = "gp3"
-      size        = 2
-      device_name = "xvdg"
-      delete_term = true
-      throughput  = 125
-    }
-  ]
+  ebs_block_devices = [
+      {
+        device_name = "/dev/xvda"
+        volume_size = 8
+        volume_type = "standard"
+      },
+      {
+        device_name = "/dev/sdf"
+        volume_size = 8
+        volume_type = "gp2"
+      }
+    ]
   key_name = "${var.key_name}"
   source_dest_check = false
   tags = {
