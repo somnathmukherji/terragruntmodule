@@ -8,7 +8,7 @@ resource "aws_instance" "NAT_INSTANCE" {
     #volume_size = 8
   #}
   root_block_device {
-        volume_size = 8
+        volume_size = var.root_volume_size
         volume_type = "standard"
       }
 	  
