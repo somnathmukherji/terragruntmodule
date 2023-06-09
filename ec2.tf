@@ -8,7 +8,6 @@ resource "aws_instance" "NAT_INSTANCE" {
     #volume_size = 8
   #}
   root_block_device {
-        device_name = "/dev/xvda"
         volume_size = 8
         volume_type = "standard"
       }
