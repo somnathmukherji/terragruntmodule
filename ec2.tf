@@ -7,18 +7,18 @@ resource "aws_instance" "NAT_INSTANCE" {
    # volume_type = "standard"
     #volume_size = 8
   #}
-  ebs_block_devices = [
-      {
+  root_block_device {
         device_name = "/dev/xvda"
         volume_size = 8
         volume_type = "standard"
-      },
-      {
+      }
+	  
+      ebs_block_devices {
         device_name = "/dev/sdf"
         volume_size = 8
         volume_type = "gp2"
       }
-    ]
+    
   key_name = "${var.key_name}"
   source_dest_check = false
   tags = {
