@@ -92,3 +92,99 @@ variable "host_name" {
   type = string
   default     = null
  }
+
+variable "root_volume_size" {
+  description = "EC2 Root Volume Size"
+  default     = 8
+ }
+
+variable "ebs_volume1_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
+
+variable "ebs_volume2_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
+
+variable "ebs_volume3_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
+
+variable "ebs_volume4_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
+
+variable "ebs_volume5_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
+
+variable "ebs_volume6_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
+
+variable "ebs_volume7_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
+
+variable "ebs_volume8_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
+
+variable "ebs_volume9_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
+
+variable "ebs_volume10_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
+
+variable "ebs_volume11_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
+
+variable "ebs_volume12_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
+
+variable "ebs_volume13_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
+
+
+variable "ebs_volume14_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
+
+variable "ebs_volume15_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
+
+variable "ebs_volume16_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
+
+variable "ebs_volume17_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
+
+variable "ebs_volume18_size" {
+  description = "EC2 EBS Volume Size"
+  default     = 8
+ }
