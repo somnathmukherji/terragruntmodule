@@ -13,7 +13,7 @@ resource "aws_instance" "NAT_INSTANCE" {
         volume_type = "standard"
       }
 	  
-      ebs_block_devices {
+      ebs_block_device {
         device_name = "/dev/sdf"
         volume_size = 8
         volume_type = "gp2"
