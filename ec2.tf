@@ -27,5 +27,8 @@ resource "aws_instance" "NAT_INSTANCE" {
 			  }
 }
 
-
+resource "aws_ebs_volume" "NAT_EBS1" {
+	availablity_zone = "ap-south-1a"
+	size = var.ebs_volume1_size
+}
 
